@@ -14,6 +14,7 @@
 #CROSS_COMPILER_TARGET_ARCHS = RTEMS-beatnik
 #CROSS_COMPILER_TARGET_ARCHS = RTEMS-uC5282
 #CROSS_COMPILER_TARGET_ARCHS = RTEMS-pc586
+CROSS_COMPILER_TARGET_ARCHS=linux-ppc64e6500
 
 # Set this when your IOC and the host use different paths
 # to access the application. This will be needed to boot
@@ -25,6 +26,7 @@
 # If you don't want to install into $(TOP) then
 # define INSTALL_LOCATION here
 #INSTALL_LOCATION=<fullpathname>
+INSTALL_LOCATION=$(LITEEE_INSTALL)/$(LITEEE_BASE)/modules/iocstats/3.1.15
 
 # Uncomment this to use CPU load determination from ssrlApps/miscUtils
 # provided by Till Straumann.
